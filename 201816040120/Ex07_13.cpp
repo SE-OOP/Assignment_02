@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-    array < int, M > n = {} ;//定义array，并初始化为0;
+    array < int, 20 > n = {} ;//定义array，并初始化为0;
 
      int i = 0, j = 0 , x ,count=0 ;
      cout << "请输入20个数字" << endl;
