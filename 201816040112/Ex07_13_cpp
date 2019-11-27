@@ -1,0 +1,33 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+
+    int i,j,x;
+    array< int, 20 > as{};
+    for(i=0;i<20;i++){
+        cin>>x;
+        if(x>=20&&x<=100){
+            as[i]=x;
+        }
+    }
+    sort(as.begin(),as.end());
+    j=0;
+    for(i=0;i<20;i++){
+        if(as[i]!=as[j])
+            {j++;
+            as[j]=as[i];}
+    }
+    for(i=j+1;i<20;i++){
+        as[i]=0;
+    }
+    for(int a:as){
+        if(a!=0)
+          cout<<a<<" ";
+
+    }
+    return 0;
+}
